@@ -2,13 +2,14 @@
  * @Author: zhengduo
  * @Date: 2023-01-18 09:54:08
  * @LastEditors: zhengduo
- * @LastEditTime: 2023-01-18 10:30:57
+ * @LastEditTime: 2023-01-18 11:06:43
  * @Descripttion: 
  */
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
 import router from './router'
+import naive from 'naive-ui'
 
 // 路由导航守卫
 router.beforeEach((to, from, next) => {
@@ -24,5 +25,6 @@ const app = createApp(App)
 app.use(router)
 // app.use(store)
 // app.use(ElementPlus)
+app.use(naive)
 app.mount('#app')
 // createApp(App).mount('#app')

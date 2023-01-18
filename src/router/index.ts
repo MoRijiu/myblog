@@ -2,7 +2,7 @@
  * @Author: zhengduo
  * @Date: 2023-01-18 10:01:04
  * @LastEditors: zhengduo
- * @LastEditTime: 2023-01-18 10:25:11
+ * @LastEditTime: 2023-01-18 13:31:40
  * @Descripttion: 
  */
 
@@ -17,13 +17,9 @@ import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router';
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    redirect: '/home'
-  },
-  {
-    path: '/home',
-    name: 'home',
-    component: () => import("@/views/home/index.vue"),
-    alias: '/home',
+    name: 'index',
+    component: () => import("@/views/index/index.vue"),
+    alias: '/index',
     meta: {
       title: '首页'
     }
