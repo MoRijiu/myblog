@@ -10,7 +10,7 @@
     <div class="content">
 
       <div class="logo">
-        <a href="/">MoRijiu个人博客</a>
+        <a href="/">MoRijiu积水成渊</a>
       </div>
       <div class="menu">
         <ul>

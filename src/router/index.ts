@@ -2,7 +2,7 @@
  * @Author: zhengduo
  * @Date: 2023-01-18 10:01:04
  * @LastEditors: zhengduo
- * @LastEditTime: 2023-01-18 13:31:40
+ * @LastEditTime: 2023-01-19 10:31:34
  * @Descripttion: 
  */
 
@@ -21,7 +21,16 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("@/views/index/index.vue"),
     alias: '/index',
     meta: {
-      title: '首页'
+      title: 'MoRijiu积水成渊博客站'
+    }
+  },
+  {
+    path: '/blog',
+    name: 'blog',
+    component: () => import("@/views/blog/index.vue"),
+    alias: '/blog',
+    meta: {
+      title: '首页 | MoRijiu积水成渊博客站'
     }
   },
 ];

@@ -2,14 +2,14 @@
  * @Author: zhengduo
  * @Date: 2023-01-18 14:28:54
  * @LastEditors: zhengduo
- * @LastEditTime: 2023-01-18 14:58:32
+ * @LastEditTime: 2023-01-19 11:19:55
  * @Descripttion: 
 -->
 <template>
   <div class="pf-style">
     <div class="content">
       <p>
-        <span>MoRijiu个人博客 - 网站用于个人学习和交流使用</span>
+        <span>MoRijiu积水成渊 - 网站用于个人学习和交流使用</span>
       </p>
       <p>
         <a href="javascript:;">辽ICP备10046444号</a>

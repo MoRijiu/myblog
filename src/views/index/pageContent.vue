@@ -2,7 +2,7 @@
  * @Author: zhengduo
  * @Date: 2023-01-18 14:44:00
  * @LastEditors: zhengduo
- * @LastEditTime: 2023-01-18 16:15:34
+ * @LastEditTime: 2023-01-19 10:41:00
  * @Descripttion: 
 -->
 <template>
@@ -11,9 +11,9 @@
       <div class="main">
         <div class="logo"></div>
         <div class="main-intro">
-          <p class="title">MoRijiu个人博客</p>
+          <p class="title">MoRijiu积水成渊<span>博客站</span></p>
           <p class="en-intro">Record every bit of life, achieve my dream, improve my ability, and change my world!</p>
-          <p class="button-style">点击进入</p>
+          <p class="button-style" @click="toBlog">点击进入</p>
         </div>
       </div>
       <ul class="intro-list">
@@ -35,6 +35,13 @@
 </template>
 
 <script setup lang="ts">
+import { useRouter } from 'vue-router';
+const router = useRouter();
+const toBlog = () => {
+  router.push({
+    path: '/blog'
+  })
+}
 </script>
 
 <style lang=scss>
@@ -45,13 +52,12 @@
     width: 1200px;
     height: calc(100vh - 66px);
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+    overflow: hidden;
 
     .main {
       flex: 1;
       width: 500px;
-      margin: 100px auto;
+      margin: calc(30vh - 60px) auto;
       display: flex;
 
       .logo {
@@ -72,6 +78,18 @@
         .title {
           font-size: 44px;
           font-weight: 700;
+          position: relative;
+          span {
+            display: block;
+            position: absolute;
+            font-size: 14px;
+            background-color: rgb(255, 132, 31);
+            padding: 4px;
+            color: white;
+            border-radius: 6px 0 6px 0;
+            top: 0;
+            right: -30px;
+          }
         }
 
         .en-intro {
@@ -110,6 +128,7 @@
       flex: 1;
       display: flex;
       // align-items: center;
+      margin-top: 20vh;
 
       li {
         flex: 1;
@@ -118,7 +137,7 @@
 
       li:not(:last-child) {
         padding-right: 20px;
-        border-right: 1px solid rgb(230, 230, 230);
+        border-right: 1px solid #fff;
       }
 
       li p:first-child {
